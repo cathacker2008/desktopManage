@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>无标题文档</title>
+
+<link rel="stylesheet" type="text/css" href="../css/tools.css">
+<link rel="stylesheet" type="text/css" href="../themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../themes/icon.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/table.css">
+<link rel="stylesheet" type="text/css" href="../css/deskTable.css">
+<link rel="stylesheet" type="text/css" href="../css/row-style.css">
+<link rel="stylesheet" type="text/css" href="../css/zTreeStyle.css">
+
+</head>
+
+<body onselectstart="return false" >
+<div class='deskManageTools'>
+	<div class='deskManageAdd'><span class='toolPic  icon-add'></span><span class='addText'>新建桌面</span></div>
+	<div class='createMoudle disableBtn'><span class='toolPic  icon-stack'></span><span class='addText'>创建模板</span></div>
+	<!--<div class='createSnap disableBtn'><span class='toolPic  icon-chuangjiankuaizhao'></span><span class='addText'>创建快照</span></div>-->
+	<div class='showDetails disableBtn'><span class='toolPic   icon-eye'></span><span class='addText'>查看细节</span></div>
+	<div class='batchOpt disableBtn'><span class='addText'>批量操作</span><span class='batchPic   icon-arrow-down'></span>
+		<div class='optPanel'>
+			<ul class='optPanel-ul' >
+				<li oType='start'><span oType='start' class='icon-play-o color-green'></span><span oType='start'> 开机</span></li>
+				<li oType='shutdown'><span oType='shutdown' class='icon-power-down color-orange '></span><span oType='shutdown'> 关机</span></li>
+				<li oType='reboot'><span oType='reboot' class='icon-rotate color-green '></span><span oType='reboot'> 重启</span></li>
+				<li oType='stop'><span oType='stop' class='icon-power-cord color-green '></span><span oType='stop'> 断电</span></li>
+				<li oType='delete'><span oType='delete' class='icon-trashcan color-green '></span><span oType='delete'> 删除</span></li>
+			</ul>
+		</div>	
+	</div>
+	<div class='deskManageserach'>
+		<div class='deskManageSelect'></div>
+		<div class='deskManageInput'><input id='deskInput'></input><div class='searchPic'><span class="icon-search1"></span></div></div>
+	</div>
+</div>
+<div class='ztreePanel'>
+	<ul id ='zTree' class='ztree'>
+	</ul>
+</div>
+<div id = 'dgwrap' class = 'vmTablePanel'>
+</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>   
+<script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src='../locale/easyui-lang-zh_CN.js'></script>
+<script type='text/javascript' src='../js/dc.js'></script>
+<script type='text/javascript' src='../js/jquery.deskSelect.js'></script>
+<script type='text/javascript' src='../js/deskMenu.js'></script>
+<script type='text/javascript' src='../js/deskPage.js'></script>
+<script type="text/javascript" src='../js/jquery.slimscroll.min.js'></script>
+<script type="text/javascript" src="../js/jquery.ztree.core-3.5.min.js"></script>
+<script type='text/javascript' src='../js/deskTable.js'></script>
+<script type="text/javascript" src='../js/tableInit.js'></script>
+</html>

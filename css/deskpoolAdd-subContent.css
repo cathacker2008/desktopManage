@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content{
+	width:600px;
+	height:454px;
+	margin:0 auto;
+	padding:0;
+}
+.basicInfo {
+	margin-left:40px;
+	margin-right:60px;
+	width:500px;
+	/*height:317px;*/
+	/*	background-color:#D9D9D9;*/
+	color:#333333;
+	text-align:right;
+
+
+}
+.choosenet{
+	margin-top:22px;
+
+}
+.basicInfo li:first-child{
+	/*margin-top:22px;*/
+}
+.basicInfo li{
+	margin-bottom:10px;
+	height:36px;
+	position:relative;
+}
+.input_text{
+	width:367px;
+	height:34px;
+	border:1px solid #E5E9EF;
+	margin-right:0;
+}
+.seperate{
+	color:#E5E9EF;
+	height: 36px;
+	line-height: 36px;
+}
+.btn{
+	position:relative;
+	margin-top:22px;
+	height:65px;
+	width:100%;
+	border-top: 1px solid #E5E8EF;
+
+}
+.btn input{
+	position:absolute;
+	top:15px;
+	width:77px;
+	height:33px;
+	background-color:#0590CC;
+	border-style:none;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	color:#fff;
+	font-family: 'Microsoft YaHei','????','\5FAE\8F6F\96C5\9ED1';
+
+}
+.popSubmit {
+	right:145px;
+	-webkit-box-shadow: 0px 2px 0px #aabdcd;
+	-moz-box-shadow: 0px 2px 0px #aabdcd;
+	-o-box-shadow: 0px 2px 0px #aabdcd;
+	box-shadow: 0px 2px 0px #aabdcd;
+
+}
+.popCancel {
+	right:60px;
+	-webkit-box-shadow: 0px 2px 0px #4483b0;
+	-moz-box-shadow: 0px 2px 0px #4483b0;
+	-o-box-shadow: 0px 2px 0px #4483b0;
+	box-shadow: 0px 2px 0px #4483b0;
+}
+
+.deskAddTitleInfo{
+	display:block;
+	position:absolute;
+	left:-4px;
+	width:120px;
+	height:36px;
+	line-height:36px;
+	text-align:right;
+}
+.deskAddTitle{
+	display:block;
+	position:absolute;
+	left:0;
+	width:160px;
+	height:36px;
+	line-height:36px;
+	text-align:left;
+}
+.popSelectBox {
+	margin-left: 4px;
+	position:absolute;	
+	left:127px;
+	height:36px;
+	border:1px solid #DEE5F5;
+	text-align:left;
+}
+.dmdeskCpanel {
+  position: relative;
+  height:367px;
+  overflow-y: auto;
+  margin-right: 22px;
+}
+.selectNetWorkPanel {
+	position:relative;
+}
+.selectNetWorkContainer {
+	text-align:right;	
+}
+.netPic {
+	position:relative;
+	color:#D3DBE8;
+	font-size:34px;
+	cursor:pointer;
+}
+#dmDeskpoolCluster,#dmDeskpoolPreNum{
+	background-color:#CACCD1
+}
+.domainTip {
+	display:none;
+	position:absolute;
+	top:15px;
+	left:190px;
+	color:red;
+}
+.tip {
+	display: block;
+	position: relative;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	color:red;
+	font-size:12px;
+}
+

@@ -1,0 +1,62 @@
+.headPanel {
+	position:relative;height:36px;margin:10px 0 10px 20px;z-index:1;
+}
+.headPanel>div {
+	position:relative;
+	top: 0;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    -o-border-radius:4px;
+	color: white;
+	font-size: 14px;
+	float:left;
+	margin-right:10px;
+}
+.pic {
+	position: absolute;
+	top: 10px;
+	left: 8px;
+}
+
+.pagination-first {
+  background: url('../themes/default/images/pagination_icons.png') no-repeat 0 0;
+   -moz-padding-start:10px;
+  padding-left:10px\9;
+    padding-left:10px;
+ 
+ 
+  
+}
+.pagination-prev {
+  background: url('../themes/default/images/pagination_icons.png') no-repeat -16px 0;
+ -moz-padding-start:10px;
+  padding-left:10px\9;
+  padding-left: 10px;
+ 
+}
+.pagination-next {
+  background: url('../themes/default/images/pagination_icons.png') no-repeat -32px 0;
+-moz-padding-start:10px;
+ padding-left:10px\9;
+   padding-left:10px;
+}
+.pagination-last {
+  background: url('../themes/default/images/pagination_icons.png') no-repeat -48px 0;
+ -moz-padding-start:10px;
+  padding-left:10px\9;
+    padding-left:9px;
+}
+.pagination-load {
+  background: url('../themes/default/images/pagination_icons.png') no-repeat -64px 0;
+ -moz-padding-start:10px;
+  padding-left:10px;
+
+}
+.pagination-loading {
+  background: url('../themes/default/images/loading.gif') no-repeat;
+  padding-left:10px;
+}
+.popOpt{
+	margin-top:0;
+}

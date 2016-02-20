@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/pandect.css">
+</head>
+<body >
+<div class = 'pandectWrapper'>
+	<div class='pandectMenu'>
+		<span class='pandectTitle'>物理资源</span>
+		<div class='MenuBox'>
+			<div class = 'MenuWrapper'><div class='MenuLayer1'><span class='MenuLayer1 pandectPic icon-home-o'></span><span id='pandectDataCenter'></span><span class='pandectMenuTip'>数据中心<a>(个)</a></span></div></div>
+			<div class = 'MenuWrapper'><div class='MenuLayer2'><span class='MenuLayer2 pandectPic icon-servers-o'></span><span id='pandectCluster'></span><span class='pandectMenuTip'>集群<a>(个)</a></span></div></div>
+			<div class = 'MenuWrapper'>	<div class='MenuLayer3'><span class='MenuLayer3 pandectPic icon-server-o2'></span><span id='pandectServer'></span><span class='pandectMenuTip'>服务器<a>(个)</a></span></div></div>
+			<div class = 'MenuWrapper'><div class='MenuLayer4'><span class='MenuLayer4 pandectPic icon-computer-o'></span><span id='pandectDesk'></span><span class='pandectMenuTip'>桌面<a>(个)</a></span></div></div>
+		</div>
+	</div>
+	<div class='pandectPanel'>
+		<div>
+			<div class='pandectDeskResource' >
+				<div class='resourceTitle'>
+					<a>桌面资源</a>
+				</div>
+				<div class='deskSelectPanel'></div>
+				<iframe src='./pages/desktopChart.html'  name='deskPie' id='pandectIframe1' frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes">
+				</iframe>
+			</div>
+		</div>
+		<div>
+			<div class='pandectSessionCount'>
+				<div class='resourceTitle'>
+					<a>会话统计</a>
+				</div>
+				<div class='deskSelectPanel1'></div>
+				<iframe src='./pages/sessionChart.html' name='area' id='pandectIframe2' frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes">
+				</iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<!--<script type = 'text/javascript' src='./js/deskSlider.js'></script>-->
+<script type = 'text/javascript' src='./js/jquery.deskSelect.js'></script>
+<script type = 'text/javascript' src='./js/pandectInit.js'></script>
+</body>
+</html>
+

@@ -1,0 +1,225 @@
+.wrapper {
+	margin:auto;
+}
+.wulituopuWrapper {
+	padding:20px;
+	/*margin:0;*/
+	margin:auto;
+	background-color:#edeff2;
+	/*width:1384px;*/
+}
+.wulituopuSlider {
+	position:relative;
+	height:303px;
+	/*margin:20px 0 0 20px;*/
+	/*overflow:hidden;*/
+
+}
+.wlSliderBox{
+	position:relative;
+	overflow-x:hidden;
+	-webkit-transform: translateZ(0);
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+}
+.wlPrev,.wlNext {
+	position:absolute;
+	top:100px;
+	height:60px;
+	width:33px;
+	z-index:1;
+}
+.wlPrev{
+	display:none;
+	left:0;
+	background-image:url(../images/left1.png);
+	background-repeat:no-repeat;
+	background-position: 50% 50%;
+	cursor:pointer;
+	transition:background-image 0.2s;
+	-moz-transition:background-image 0.2s; /* Firefox 4 */
+	-webkit-transition:background-image 0.2s; /* Safari and Chrome */
+	-o-transition:background-image 0.2s; /* Opera */
+}
+.wlNext {
+	/*display:none;*/
+	right:0;
+	background-image:url(../images/right1.png);
+	background-repeat:no-repeat;
+	background-position: 50% 50%;
+	cursor:pointer;
+	transition:background-image 0.2s;
+	-moz-transition:background-image 0.2s; /* Firefox 4 */
+	-webkit-transition:background-image 0.2s; /* Safari and Chrome */
+	-o-transition:background-image 0.2s; /* Opera */
+}
+.wlSliderContent {
+	position:relative;
+	overflow:hidden;
+}
+.wlSliderEle {
+	position:relative;
+	background-repeat: no-repeat;
+	background-position-x:123px;
+	background-position:123px 50%;
+	float:left;
+	cursor:pointer;
+}
+.wlTitleN{
+	position:absolute;
+	top:260px;
+	left:112px;
+	width:120px;
+	height:28px;
+	line-height:28px;
+	color:#058fcd;
+	font-size:18px;
+	border:1px solid #058fcd;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	text-align:center;
+	background-color:none;
+}
+.wlTitleC {
+	background-color:#058fcd;
+	color:white;
+}
+.wlTitleS {
+	background-color:#058fcd;
+	color:white;
+}
+.wlTip,.wlServerTip{
+	position:absolute;
+	padding:20px;
+	top:25px;
+	right:0;
+	max-height:218px;
+	max-width:110px;
+	overflow:auto;
+	color:white;
+	background-color:#000000;
+	opacity:0.6;
+	filter:alpha(opacity=60);  
+	border-radius:10px;
+}
+.wlTip,.wlServerTip p {
+	line-height:8px;
+	white-space:nowrap;
+}	
+.wlServerTip {
+	right:100px;
+}
+.wlTip::-webkit-scrollbar {
+	width:10px;
+	-moz-appearance: none !important;
+	width:10px;
+}
+.wlTip::-webkit-scrollbar-button {
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	-moz-appearance: none !important;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.wlTip::-webkit-scrollbar-thumb {
+	background-color:#2a2a2a;
+	border-radius:10px;
+	-moz-appearance: none !important;
+	background-color:#2a2a2a;
+	border-radius:10px;
+}
+
+
+.wulituopuTitle {
+	position:relative;
+	height:18px;
+	color:#666666;
+	line-height:18px;
+	font-size:16px;
+	margin:40px 0 20px 20px;
+}
+.wulituopuServerPanel {
+	position:relative;
+	overflow:hidden;
+	/*width:1384px;*/
+}
+.wltpLayerbg {
+	padding:5px;
+	float:left;
+}
+.wltpServerLayer {
+	position:relative;
+	width:448px;
+	height:260px;
+	background-color:white;
+	background-repeat: no-repeat;
+	background-position:60px 50%;
+	color:#666666;
+}
+.wltpServerName {
+	position:absolute;
+	top:20px;
+	left:20px;
+	line-height:18px;
+	height:18px;
+	color:#666666;
+	font-size:18px;
+}
+.wltpRemain {
+	position:absolute;
+	top:20px;
+	right:15px;
+	width:100px;
+	line-height:14px;
+	color:#333333;
+	height:14px;
+	font-size:14px;
+}
+.wlInfo {
+	position:absolute;
+	top:90px;
+	right:15px;
+	width:100px;
+	line-height:14px;
+	height:14px;
+	font-size:14px;
+	color:#666666;
+	margin:10px;
+}
+.wltpNum {
+	position:absolute;
+	top:45px;
+	left:166px;
+	color:#333333;
+	background-color:#000000;	
+	opacity:0.2;
+	filter:alpha(opacity=20); /*支持IE */
+	-moz-opacity:0.2; /*支持FF */
+	height:46px;
+	line-height:46px;
+	width:46px;
+	border-radius:23px;
+	text-align:center;
+}
+.wltpNumText {
+	position:absolute;
+	top:45px;
+	left:166px;
+	height:46px;
+	line-height:46px;
+	width:46px;
+	text-align:center;
+	background-color: transparent;
+}
+.wltpBox {
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+}

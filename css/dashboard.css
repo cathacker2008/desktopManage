@@ -1,0 +1,261 @@
+@charset "utf-8";
+	body {
+	margin:0;
+	padding:0;
+	text-align:center;
+	font-family:Microsoft YaHei;
+	font-size:14px;
+	overflow:auto;
+	width:100%;
+	height:auto;
+	
+}
+ul,li, input button {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+/*.resourceUL {
+	width:100%;
+}
+.resourceLI {
+	float:left;
+	width:25%;
+	font-size:20pt;
+	font-weight:bold;
+}
+.resourceLI a {
+	text-decoration:none;
+}
+.resourceLI a:active {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.resourceLI a:hover {
+	color:#FF9866;
+}
+.resourceLI ul {
+	width:160px;
+	margin:50px auto;
+}
+.resourceLI li {
+	text-align:center;
+}
+.resourceLI span {
+	font-size:18pt;
+	color:#3333333;
+}
+.Icon {
+	display:block;
+	width:60px;
+	height:60px;
+	background-image: url(../images/phr.png);
+	background-repeat: no-repeat;
+	margin:0 auto;
+}
+.datacenterIcon {
+	background-position:0 0;
+}
+.clusterIcon {
+	background-position:-60px 0;
+}
+.serverIcon {
+	background-position:-120px 0;
+}
+.desktopIcon {
+	background-position:-180px 0;
+}
+a {
+	color:#333;
+}
+span {
+	}
+.count {
+	color:#999;
+}*/
+	.containter {
+	padding:0 20px 0 20px;
+	
+}
+.hpFir {
+	width:100%;
+	height:270px;
+	border-bottom:#E8E8E8 1px solid;
+}
+.hplabel {
+	width:99.68%;
+}
+.sourcetitltle {
+	
+	height:42px;
+	color:#666666;
+	text-align:left;
+	font-size:18px;
+	line-height:42px;
+	vertical-align:middle;
+	padding-left:5px;
+}
+.hpFir .hpFirli {
+	float:left;
+	width:23.5%;
+	height:200px;
+	background-color:#fff;
+	margin-left:1%;
+}
+.Icon {
+	float:left;
+	margin-left:50px;
+	margin-top:50px;
+}
+.text {
+	float:left;
+	margin-left:30px;
+	margin-top:50px;
+}
+.hpFirli ul {
+	text-align:center;
+	width:100%;
+	height:100%;
+}
+.text a {
+	font-size:40px;
+	color:#333333;
+	font-family:"方正大黑简";
+	font-weight:bold;
+	text-decoration:none;
+}
+.text span {
+	font-size:16px;
+	color:#333333;
+}
+.text .count {
+	color:#999999;
+}
+/*	首页物理资源图片展示*/
+	a.dcimg {
+	display:block;
+	width:100px;
+	height:100px;
+	background-image:url(../images/home-zuhu.png);
+	background-repeat: no-repeat;
+	margin:0 auto;
+}
+a.cs {
+	display:block;
+	width:100px;
+	height:100px;
+	background-image: url(../images/home-jiqun.png);
+	background-repeat: no-repeat;
+	margin:0 auto;
+}
+a.me {
+	display:block;
+	width:100px;
+	height:100px;
+	background-image: url(../images/home-fuwuqi.png);
+	margin:0 auto;
+}
+a.zm {
+	display:block;
+	width:100px;
+	height:100px;
+	background-image: url(../images/home-zhuomian.png);
+	margin:0 auto;
+}
+.chart{
+	margin-top:20px;
+	
+	}
+.chart li {
+	float:left;
+	width:48%;
+	background-color:#fff;
+	height:440px;
+	margin-left:1%;
+
+}
+.chart .sessionchart {
+	
+}
+.showNull {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	line-height:360px;
+	text-align:center;
+	font-size:18px;
+	z-index:99;
+	background-color:white;
+}
+.legendPanel{
+	display:none;
+	position:absolute;
+	top:0;
+	left:30px;
+	height:60px;
+	line-height:20px;
+	text-align:center;
+	font-size:12px;
+	z-index:99;
+	overflow:hidden;
+	cursor:default;
+}
+.legendDiv {
+	position:relative;
+	float:left;
+	overflow:hidden;
+	margin-right:8px;
+}
+.legendPic {
+	position:relative;
+	width:20px;
+	height:12px;
+	margin-right:5px;
+	border-radius:2px;
+	float:left;
+	top:3px;
+}
+.legendName {
+	position:relative;
+	float:left;
+}
+
+.switchDiv{
+	border:solid #888 1px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius:4px;
+	float:right;
+	padding: 0px 0;
+	overflow: hidden;
+	margin-right: 15px;
+}
+.switchSpan-left{
+	background-color: #fff;
+	color: #888;
+	padding: 3px 6px 3px 10px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius:0px;
+	cursor:pointer;
+	float: left;
+}
+
+.switchSpan-right{
+	background-color: #fff;
+	color:#888;
+	padding: 3px 10px 3px 6px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius:0px;
+	cursor:pointer;
+	float: left;
+}
+
+.switchColor{
+	color:#fff;
+	background-color:#068fc6;
+}

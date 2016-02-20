@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>     
+<script type="text/javascript" src="../js/js.js" charset="gb2312"></script>
+<script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+ <script type="text/javascript" src='../locale/easyui-lang-zh_CN.js'></script>
+ <script type="text/javascript" >
+	 
+var key = { SHIFT:16, CTRL:17};    
+var selectIndex = {firstSelectRowIndex:0, lastSelectRowIndex:0};  
+var inputFlags = {isShiftDown:false, isCtrlDown:false}  
+  
+function keyPress(event){//响应键盘按下事件
+   
+    var e = event || window.event;    
+    var code = e.keyCode | e.which | e.charCode;        
+    switch(code) {    
+        case key.SHIFT:    
+        inputFlags.isShiftDown = true;  
+        $('#dg').datagrid('options').singleSelect = false;  
+		          
+        break;  
+    case key.CTRL:  
+        inputFlags.isCtrlDown = true;  
+        $('#dg').datagrid('options').singleSelect = false;             
+    default:          
+    }  
+}  
+  
+function keyRelease(event) { //响应键盘按键放开的事件
+ 
+    var e = event || window.event;    
+    var code = e.keyCode | e.which | e.charCode;        
+    switch(code) {    
+        case key.SHIFT:   
+        inputFlags.isShiftDown = false;  
+        selectIndex.firstSelectRowIndex = 0;  
+        $('#dg').datagrid('options').singleSelect = true;              
+        break;  
+    case key.CTRL:  
+        inputFlags.isCtrlDown = false;  
+        selectIndex.firstSelectRowIndex = 0;  
+        $('#dg').datagrid('options').singleSelect = true;  
+        break;  
+    default:          
+    }  
+}  
+	
+$(document).ready(function(){
+	$('#dg').datagrid("resize",{
+		width:$(document).width() - 5,
+		height:500
+	});
+	
+			
+	$(".menu-item").each(function(index, element) {
+        $(this).css("height","33px");
+    });
+	
+$("#dg").datagrid({
+	fit:true,
+	data: [
+		{"productid":"FI-SW-01","productname":"Koi","unitcost":10.00,"status":"P","listprice":36.50,"attr1":"Large","itemid":"EST-1"},
+	{"productid":"K9-DL-01","productname":"Dalmation","unitcost":12.00,"status":"P","listprice":18.50,"attr1":"Spotted Adult Female","itemid":"EST-10"},
+	{"productid":"RP-SN-01","productname":"Rattlesnake","unitcost":12.00,"status":"P","listprice":38.50,"attr1":"Venomless","itemid":"EST-11"},
+	{"productid":"RP-SN-01","productname":"Rattlesnake","unitcost":12.00,"status":"P","listprice":26.50,"attr1":"Rattleless","itemid":"EST-12"},
+	{"productid":"RP-LI-02","productname":"Iguana","unitcost":12.00,"status":"P","listprice":35.50,"attr1":"Green Adult","itemid":"EST-13"},
+	{"productid":"FL-DSH-01","productname":"Manx","unitcost":12.00,"status":"P","listprice":158.50,"attr1":"Tailless","itemid":"EST-14"},
+	{"productid":"FL-DSH-01","productname":"Manx","unitcost":12.00,"status":"P","listprice":83.50,"attr1":"With tail","itemid":"EST-15"},
+	{"productid":"FL-DLH-02","productname":"Persian","unitcost":12.00,"status":"P","listprice":23.50,"attr1":"Adult Female","itemid":"EST-16"},
+	{"productid":"FL-DLH-02","productname":"Persian","unitcost":12.00,"status":"P","listprice":89.50,"attr1":"Adult Male","itemid":"EST-17"},
+	{"productid":"AV-CB-01","productname":"Amazon Parrot","unitcost":92.00,"status":"P","listprice":63.50,"attr1":"Adult Male","itemid":"EST-18"}
+              
+	],
+
+		   onClickRow:function(index,row){
+            if(index != selectIndex.firstSelectRowIndex && !inputFlags.isShiftDown ){    
+                selectIndex.firstSelectRowIndex = index;
+            }             
+            if(inputFlags.isShiftDown ) {  
+                $('#dg').datagrid('clearSelections');  
+                selectIndex.lastSelectRowIndex = index;  
+                var tempIndex = 0;  
+                if(selectIndex.firstSelectRowIndex > selectIndex.lastSelectRowIndex ){  
+                    tempIndex = selectIndex.firstSelectRowIndex;  
+                    selectIndex.firstSelectRowIndex = selectIndex.lastSelectRowIndex;  
+                    selectIndex.lastSelectRowIndex = tempIndex;  
+                }  
+                for(var i = selectIndex.firstSelectRowIndex ; i <= selectIndex.lastSelectRowIndex ; i++){  
+                    $('#dg').datagrid('selectRow', i);     
+                }     
+            }             
+        }
+	})
+		 
+});
+
+
+ </script>
+
+<link rel="stylesheet" type="text/css" href="../themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../themes/icon.css">
+
+</head>
+
+<body  onselectstart="return false" onkeydown="keyPress(event);" onkeyup="keyRelease(event);">
+    
+   
+    
+     
+  
+
+       <div id="dgwrap">
+     <table id="dg"  fitColumns="true" class="easyui-datagrid"  
+			data-options="pageSize:10,singleSelect:true,pagination:true">
+		<thead>
+			<tr >
+				<th data-options="field:'itemid',width:160" >用户</th>
+				<th data-options="field:'productid',width:100">桌面名称</th>
+				<th data-options="field:'listprice',width:160,align:'center'">IP</th>
+				<th data-options="field:'unitcost',width:160,align:'center'">接入时间</th>
+				<th data-options="field:'attr1',width:240" >接入时长</th>
+               
+		  </tr>
+		</thead>
+	</table>
+      <div id="dgr" class="easyui-menu" style="width:150px; display:none;">
+		        <div data-options=""  	onClick="javascript:remoteCommand('Lock')">开机</div>
+		        <div data-options=""    onClick="javascript:remoteCommand('UnLock')">关机</div>
+		        <div data-options="" 	 onClick="javascript:remoteCommand('ShutDown')">重启</div>
+		        <div data-options="" 	onClick="javascript:remoteCommand('Reboot')">快照</div>
+                <div data-options="" 	 onClick="javascript:remoteCommand('Lock')">控制连接</div>
+		        <div data-options="" 	 onClick="javascript:remoteCommand('UnLock')">分配/解除用户</div>
+		        <div data-options="" 	 onClick="javascript:remoteCommand('ShutDown')">生成模板</div>
+		        <div data-options="" 	 onClick="javascript:remoteCommand('Reboot')">锁定</div>
+                <div data-options=""     onClick="javascript:remoteCommand('ShutDown')">删除</div>
+		    </div>
+      </div>
+      
+</body>
+</html>

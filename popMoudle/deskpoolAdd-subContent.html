@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/deskpoolAdd-subContent.css">
+<title>deskpoolAdd-subContent</title>
+</head>
+
+<body>
+<div class='content'>
+	<div class='dmdeskCpanel'>
+<ul class='basicInfo fontSize5'>
+<li><div class='deskAddTitleInfo'>桌面池名称 :</div><input id='name' class="input_text" type="text" /></li>
+<li><div class='deskAddTitleInfo'>描述 :</div><input id='description' class="input_text" type="text" /></li>
+<li  style='z-index:100;'><div class='deskAddTitleInfo'>桌面类型 :</div><div id ='dmDeskType' class='popSelectBox'></div></li>
+<li style='z-index:99;'><div class='deskAddTitleInfo'>模板 :</div><div id ='dmDeskpoolTemplate' class='popSelectBox'></div></li>
+<li><div class='deskAddTitleInfo'>数量 :</div><input  id='num_desktop' class="input_text" type="text" value='1' /></li>
+<li><div class='deskAddTitleInfo'>预启动数量 :</div><input  id="dmDeskpoolPreNum" class="input_text" type="text" value='0' readOnly='true'/></li>
+<li style='z-index:98;'><div class='deskAddTitleInfo'>集群 :</div><input id='dmDeskpoolCluster' class="input_text" type="text" value="Default" readOnly='true'/></li>
+</ul>
+</div>
+<div class='popOpt'>
+	<div  id ='dmDeskpoolSubmit' class='dmDeskSubmit' >确定</div>
+	<div id ='dmDeskpoolCancel' class='dmDeskCancel' >取消</div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="./js/deskpoolAdd-subContent.js"></script>
+</html>

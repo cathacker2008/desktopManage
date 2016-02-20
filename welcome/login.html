@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="image/x-icon" href='./images/favicon.ico' rel='icon'>
+<link type="image/x-icon" href='./images/favicon.ico' rel='shortcut icon'>
+<meta charset="UTF-8">
+<title>欢迎使用电科凌云安全虚拟桌面系统</title>
+<link type="text/css" rel="stylesheet" href="./style.css" />
+</head>
+<body>
+	<div class="header">
+		<div class="area">
+			<div class="logo"></div>
+			<div class="menu">
+				<ul>
+					<li class="current"><a href="#">管理登录</a></li>
+					<li><a href="#">用户登录</a></li>
+					<li style='display:none;'><a href="#">终端管控</a></li>
+					<li><a href="./services/reports-redirect">日志报表</a></li>
+					<li><a href="#">资源下载</a></li>
+				</ul>
+				<div class="curLine"></div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="tab1">
+			<div class="login">
+				<h2>管理登录</h2>
+				<ul>
+					<form>
+						<li class='forIE'><i class="icon-user"></i><input class='focusAuto' type="text" id='username' name='username' placeholder="用户名" maxlength="50" /></li>
+						<li class='forIE'><i class="icon-key"></i><input type="password" id='password' name='password' placeholder="密码" /></li>
+						<li class='pinnav forIE'><i class="icon-pin"></i><input type="text" id='pincode' name='pincode' placeholder="PIN码" /></li>
+						<li class='domain forIE'><i class="icon-domain"></i><input type="text" name='domain' readOnly='true' id="domain" value="internal" />
+						<p></p>
+						</li>
+						<li><label><input id='remember' type="checkbox" />记住用户名和密码</label></li>
+					</form>
+					<li class="login-msg"><span>登录密码错误</span></li>
+					<li><button onclick='welcome.checkLogin()'>登 录</button></li>
+				</ul>
+			</div>
+		</div>
+		<div class="tab2">
+			<div class="area">
+				<div class="down-item">
+					<h3>windows用户</h3>
+					<p>要能够使用本地安装的控制台客户端('Native client'选项)通过SPICE或VNC协议连接至虚拟机，请访问下列链接下载并安装virt-viewer客户端：<br>
+					<a href="/svmms/services/files/spice/virt-viewer-x86.msi">用于32位Windows的Virt Viewer</a>
+					<a href="/svmms/services/files/spice/virt-viewer-x64.msi">用于64位Windows的Virt Viewer</a>
+					</p>
+
+					<p>对于用SPICE协议从客户机到虚拟机进行USB重定向的场景，请访问下列链接下载和安装USB Clerk: <br>
+					<a href="/svmms/services/files/spice/usbclerk-x86.msi">用于32位Windows的USB Clerk</a>
+					<a href="/svmms/services/files/spice/usbclerk-x64.msi">用于64位Windows的USB Clerk</a>
+					</p>
+				</div>
+				<div class="down-item">
+					<h3>GUN/Linux 用户</h3>
+					<p>要能够使用本地安装的控制台客户端（`Native client`选项）通过SPICE或VNC协议连接至虚拟机，请用软件包管理工具安装virt-viewer客户端。在类CentOS系统里，请运行：<br>
+					<a href="javascript:;">yum instal virt-viewer</a>
+					</p>
+
+					<p>要通过Firefox Web浏览器插件使用SPICE协议连接至虚拟机，请用软件包管理者安装SPICE浏览器插件。在类CentOS系统里，请运行：<br>
+					<a href="javascript:;">yum install spice-xpi</a>
+					</p>
+				</div>
+				<div class="down-item">
+					<h3>基于浏览器的控制台客户（SPICE-HTML5和noVNC)</h3>
+					<p>如果您的Websock代理使用了这个引擎颁发的安全证书，您需要访问下列链接下载引擎的证书并将其导入到您的浏览器：
+					<a href="/ca.crt" title="ca.crt.">ca.crt. </a>
+					<p>重要注记：对于基于浏览器的控制台客户端，Websocket代理必须由您的管理员部署。</p>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<a href="http://www.cetc-cloud.com" target="_blank">中国电子科技网络信息安全有限公司</a>  版权所有
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="./welcome.js"></script>
+</html>
+

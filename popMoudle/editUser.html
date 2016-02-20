@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/tools.css">
+<link rel="stylesheet" type="text/css" href="../themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../themes/icon.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/diskandflashPhoto.css">
+
+</head>
+
+<body onselectstart="return false" onkeydown="keyPress(event);" onkeyup="keyRelease(event);" >
+<div class='headPanel fontSize5'>
+	<div class='activateDisk'>
+		<span class='pic icon-xinjianchuangjian '></span>
+		<span class='addText'>增加</span>
+	</div>
+	<div class='unActivateDisk'>
+		<span class='pic icon-shanchu '></span>
+		<span class='addText'>删除</span>
+	</div>
+</div>
+<div id="dgwrap">
+	<table id="dg"  fitColumns="true" class="easyui-datagrid"  style="width:100%;height:580px;"
+		data-options="pageSize:10,singleSelect:true,pagination:true,ctrlSelect:true">
+		<thead>
+			<tr >
+				<th data-options="field:'name',width:100" >姓名</th>
+				<th data-options="field:'userName'">用户名</th>
+			</tr>
+		</thead>
+	</table>
+	<div id="dgr" class="easyui-menu" style="width:150px; display:none;">
+	</div>
+</div>
+<div class='popOpt'>
+	<div class='dmDeskSubmit'>确定</div>
+	<div class='dmDeskCancel'>取消</div>
+</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>   
+<script type="text/javascript" src="../js/js.js"></script>
+<script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src='../locale/easyui-lang-zh_CN.js'></script>
+<script type='text/javascript' src='../js/dc.js'></script>
+<script type='text/javascript' src='../js/jquery.deskSelect.js'></script>
+<script type="text/javascript" src='../js/editUser.js'></script>
+</html>

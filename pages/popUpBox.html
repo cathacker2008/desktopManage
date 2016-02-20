@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link href="../css/popUpBox.css" rel="stylesheet" type="text/css" /> 
+
+  
+  <title>New desktop</title> 
+  <script type="text/javascript" language="javascript">
+
+  var webInstall = {
+	  currStep: 1,
+	  stepCount: 1,
+  doStep: function(i){
+		  var d = parseInt(i);
+		  if(d === 0){
+			  this.currStep = 1;
+			
+		  }else{
+			if(d === 1){
+				if(this.currStep >=1){ this.changeStep(1); }
+				else { return; }
+			}else{
+				this.changeStep(-1);
+			}
+		  }
+		  var forms = $(".con"),fi = (this.currStep > 3 ? 3 : this.currStep - 1);
+		  forms.hide().eq(fi).show();
+		 
+		  this.showStep();
+	  },
+	  changeStep:function(i){
+		  this.currStep = this.currStep + i;
+	  },
+	  showStep: function(){
+		  var s = this.currStep,c = this.stepCount;
+		  var percent = [0,35,65,95];
+		  $(".prgs_c_p").width(percent[s-1]+"%");
+		  if(s > c){ s = c;
+		  $(".ptxt"+s).addClass("ptxt_p");
+		 
+		  
+		  }
+		  if(s > 0){
+			  for(var i = 1; i < s; i++){
+				  $(".step"+i).addClass("step"+ i +"_2");
+				  $(".ptxt"+s).addClass("ptxt_p");
+				
+			  }
+		  }
+		  if(s < c){
+			  for(var i = c; i >= s; i--){
+				  $(".step").removeClass("step"+ i +"_1 step"+ i +"_2");
+				  $(".ptxt"+s).addClass("ptxt_p");
+				    $(".ptxt"+(s+1)).removeClass("ptxt_p");
+			  }
+		  }
+		  $(".step"+s).addClass("step"+ s +"_1");
+		  this.showBtn(s);
+	  },
+	  showBtn: function(s){
+		  $("button").hide();
+		  if(s === 1){
+			 $("button[name=gonext]").show();
+		  }else if(s < this.stepCount){
+			  $("button[name=goprev],button[name=gonext]").show();
+		  }
+		  else{
+			  $("button[name=goprev],button[name=finish]").show();  
+		  }
+	  },
+	  finish: function(){
+		  alert("dfdfd");
+		
+	  },
+	  recommend: function(index_num){
+		   //alert(index_num)
+		   if(index_num==1){
+			   //选中第一个(#reco)，取前三个checkbox置为选中态
+			   for(var i=0;i<index_num+2;i++){
+					  $(".checklist li:eq("+i+")").children(".mcheck").children().addClass("checkedBox");
+				}
+				
+			}
+			if(index_num==0){
+				//选中第第二个(#usr)，将所有checkbox置为非选中
+				$(".checklist li").each(function(index, element) {
+					$(element).children(".mcheck").children().removeClass("checkedBox");
+					})
+			}
+	  }
+	
+  };
+  
+
+  $(function(){
+	 webInstall.stepCount = $(".step").length;
+	 webInstall.doStep(0);
+	 var index_num=0;//假设一个值来判定选中和非选中
+	 
+	$('#usr').on('click', function () {
+		if(index_num==0){//如果没有选中#usr，则执行切换
+		webInstall.recommend(index_num);
+    	$('#reco').toggleClass('recot');
+		$('#usr').toggleClass('usr');
+		index_num=1;
+		}
+	});
+	$('#reco').on('click', function () {
+		if(index_num==1){//如果没有选中#reco，则执行切换
+		webInstall.recommend(index_num);
+    	$('#usr').toggleClass('usr');
+	 	$('#reco').toggleClass('recot');
+		}
+		index_num=0;
+	});
+
+$(".secli").each(function(index, element) {
+		$(element).find("ul").each(function(index, obj) {
+        	$(obj).find("li:gt(0) span").css("margin-left","30px");
+        });
+}) 
+
+$('input[name="check-box"]').wrap('<div class="check-box"><i></i></div>');
+$.fn.toggleCheckbox = function () {
+    this.attr('checked', !this.attr('checked'));
+}
+$('.check-box').on('click', function () {
+    $(this).find(':checkbox').toggleCheckbox();
+    $(this).toggleClass('checkedBox');
+});
+
+	//初始化复选框
+ 	//for(var i=0;i<index_num+3;i++){
+//		$(".checklist li:eq("+i+")").children(".mcheck").children().addClass("checkedBox");
+//	}
+
+
+  });
+  </script> 
+ </head> 
+ <body> 
+  <div class="containter"> 
+   <div class="tcfo"> 
+           
+    <div id="steps"> 
+     <div class="prgs"><div class="prgs_l"></div><div class="prgs_c"><div class="prgs_c_p"></div></div><div class="prgs_r"></div> 
+     </div>    
+     <div class="step step1"></div> 
+     <div class="step step2 step2_1"></div> 
+     <div class="step step3"></div> 
+     <div class="step step4"></div> 
+     <div class="ptxt ptxt1">开始安装</div><div class="ptxt ptxt2">选择安装源</div>
+     <div class="ptxt ptxt3">创建磁盘</div><div class="ptxt ptxt4">创建网络</div>  
+    </div> 
+    <div id="content"> 
+     <div class="con start"> 
+       <ul>
+       <li>
+        <div class="list">桌面名称:
+        
+     <select id="desktopname" class="easyui-combobox" name="dept" style="width:220px; height:28px; border-radius:5px;">   
+    <option value="aa">aitem1</option>   
+    <option>bitem2</option>   
+    </select>  
+
+        </div>
+        <div class="list">桌面类型:
+         <select id="desktoptype" class="easyui-combobox" name="dept" style="width:220px; height:28px; border-radius:5px;">   
+    <option value="aa">aitem1</option>   
+    <option>bitem2</option>   
+    </select>  
+          
+        </div>
+        <div class="list">数据中心:
+          <select id="datacenter" class="easyui-combobox" name="dept" style="width:220px; height:28px; border-radius:5px;">   
+    <option value="aa">aitem1</option>   
+    <option>bitem2</option>   
+    </select>  
+        </div>
+       </li>
+       <li>
+       
+       <div class="img">
+       
+       
+       </div>
+       </li>
+       
+       </ul>
+      
+      
+      
+     </div> 
+     <ul class="con hide config"> 
+ <ul>
+       <li>
+        <div class="list">桌面名称:
+        
+     <select id="desktopname" class="easyui-combobox" name="dept" style="width:220px; height:28px; border-radius:5px;">   
+    <option value="aa">aitem1</option>   
+    <option>bitem2</option>   
+    </select>  
+
+        </div>
+        <div class="list">桌面类型:
+         <select id="desktoptype" class="easyui-combobox" name="dept" style="width:220px; height:28px; border-radius:5px;">   
+    <option value="aa">aitem1</option>   
+    <option>bitem2</option>   
+    </select>  
+          
+        </div>
+        <div class="list">数据中心:
+          <select id="datacenter" class="easyui-combobox" name="dept" style="width:220px; height:28px; border-radius:5px;">   
+    <option value="aa">aitem1</option>   
+    <option>bitem2</option>   
+    </select>  
+        </div>
+       </li>
+       <li>
+       
+       <div class="img">
+       
+       
+       </div>
+       </li>
+       
+       </ul>
+      
+     </ul> 
+     <ul class="con hide systemcon "> 
+  3
+     </ul> 
+     <div class="con hide Previewcon">
+     4
+  
+     </div>
+    </div> 
+    <div class="buttons"> 
+     <button type="button" class="prev hide" name="goprev" onclick="webInstall.doStep(-1);"> </button><button type="button" class="next hide" name="gonext" onclick="webInstall.doStep(1);"> </button><button type="button" class="finish hide" name="finish" onclick="webInstall.finish();"></button>   
+    </div> 
+   </div> 
+  </div>   
+ </body>
+</html>

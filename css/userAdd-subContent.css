@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+#domain{
+	float:left;
+	
+	}
+
+.deskAddTitleInfo{
+	float:left;
+	
+	}
+.searchInput {
+  position: absolute;
+  top: 0;
+  left: 178px;
+  height: 34px;
+  width: 338px;
+  background: none;
+  font-size: 14px;
+  border: 1px solid #DEE5F5;
+}
+.search {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 38px;
+  width: 60px;
+  line-height: 38px;
+  text-align: center;
+  background-color: #00A0E8;
+  color: white;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/deskManageAdd-subContent.css">
+<title>deskManageAdd-subContent</title>
+</head>
+
+<body>
+<div class='content'>
+	<div class='dmdeskCpanel'>
+<ul class='basicInfo fontSize5'>
+<li><div class='deskAddTitle'>【基本信息】</div><label class="seperate">................................................................................................................</label></li>
+<li><div class='deskAddTitleInfo'>桌面名称 :</div><input  id='dmDeskName' class="input_text" type="text" /></li>
+<li  style='z-index:101;'><div class='deskAddTitleInfo'>密级标志 :</div><div id ='dmDeskSecurity' class='popSelectBox'></div></li>
+<li><div class='deskAddTitleInfo'>描述 :</div><input id='dmDeskDetials' class="input_text" type="text" /></li>
+<li  style='z-index:100;'><div class='deskAddTitleInfo'>桌面类型 :</div><div id ='dmDeskType' class='popSelectBox'></div></li>
+<li style='z-index:99;'><div class='deskAddTitleInfo'>模板 :</div><div id ='dmDeskTemplate' class='popSelectBox'></div></li>
+<li><div class='deskAddTitleInfo'>数据中心 :</div><input  id='dmDeskDataCenter' readOnly='true' disabled='disabled' class="input_text" type="text" /></li>
+<li><div class='deskAddTitleInfo'>创建数量 :</div><input  id="dmDeskNum" class="input_text" type="text" value= '1' /></li>
+<li style='z-index:98;'><div class='deskAddTitleInfo'>持久化 :</div><div id ='dmDeskPersistent' class='popSelectBox'></div></li>
+
+</ul>
+
+<div class='basicInfo fontSize5 ' id='selectNets'>
+<div class='selectNetWorkPanel'><div class='deskAddTitle'>【选择网络】</div><label class="seperate">................................................................................................................</label></div>
+<ul class='selectNetWorkContainer'>
+</ul>
+</div>
+</div>
+<div class='btn'>
+	<div class='desktypeTip'>没有可用的桌面类型</div>
+	<input  id ='dmDeskSubmit' class='popSubmit' type="button" value="确定"  />
+	<input type="button" class='popCancel' value="取消" />
+</div>
+</div>
+</body>
+<script type="text/javascript" src="./js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="./js/deskManageAdd-subContent.js"></script>
+</html>

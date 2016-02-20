@@ -1,0 +1,82 @@
+
+.logSelect {
+	position:absolute;
+	top:0;
+	left:0;
+	border: 1px solid #DEE5F5;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	/*overflow:hidden;*/
+}
+.logTools {
+	position: relative;
+	margin:20px 20px 20px 0 ;
+	height: 36px;
+	color: #666666;
+	font-size: 18px;
+}
+.logSerach {
+	position:absolute;
+	top:0;
+	right:0;
+	height:36px;
+	width:350px;
+}
+.deskSelectItem,.deskSelectDefaultItem {
+	/*padding-left:18px;*/
+	text-align:center;
+}
+.deskSelectDefaultItem {
+	cursor:pointer;
+}
+.deskItemPanel{
+	display:none;	
+	background-color:white;
+	-webkit-box-shadow:0px 0px 9px 0px #00BB9C;;
+	-moz-box-shadow:0px 0px 9px 0px #00BB9C;;
+	-ms-box-shadow:0px 0px 9px 0px #00BB9C;;
+}
+.deskSelectItem {
+	cursor:pointer;
+}
+.deskSelectItem:hover{
+	background-color:#00BB9C;
+}
+.deskjiantou {
+	position:absolute;
+	top:0;
+	right:5px;
+	z-index:1;
+	cursor:pointer;
+}
+.logInput {
+	position:absolute;
+	top:0;
+	left:100px;
+	height:36px;
+	width:250px;
+	border: 1px solid #DEE5F5;
+	border-radius: 4px;
+}
+.logInput input {
+	height:34px;
+	width:216px;
+	border:none;
+    outline:medium;
+	background:none;
+	font-size:18px;
+}
+.searchPic {
+	position:absolute;
+	top:6px;
+	right:6px;
+	height:25px;
+	width:24px;
+	background:url(../images/sousuo01.png) no-repeat 50% 50%;
+	cursor:pointer;
+}
+.searchPic:hover {
+	background:url(../images/sousuo02.png) no-repeat 50% 50%;
+}

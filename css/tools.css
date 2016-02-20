@@ -1,0 +1,259 @@
+body {
+	padding:0;
+	margin:0;
+	font-size:12px;
+	font-family:Microsoft YaHei,verdana,helvetica,sans-serif;
+}
+.deskManageTools {
+	position: relative;
+	margin:12px 20px 7px 0 ;
+	height: 34px;
+	color: #666666;
+	font-size: 14px;
+	font-family: 'Microsoft YaHei', 'Î¢ÈíÑÅºÚ', '\5FAE\8F6F\96C5\9ED1';
+	z-index:1;
+}
+.deskManageAdd,.createMoudle,.createSnap,.showDetails,.deskpoolAdd,.deskpoolEdit,.deskpoolAllocateuser,.desktypeAdd,.mouldEdit,.userAdd,.userCreate,.activateDisk,.unActivateDisk,.delDisk,.addDisk,.editDisk,.batchOpt{
+	position:relative;
+	top:0;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	background-color:#00bb9c;
+	color:white;
+	font-size:14px;
+	cursor:pointer;
+	line-height:32px;
+	padding: 0px 10px 0px 30px;
+	margin-right:10px;
+	float:left;
+	font-family: 'Microsoft YaHei', 'Î¢ÈíÑÅºÚ', '\5FAE\8F6F\96C5\9ED1';
+	-webkit-box-shadow: 0px 2px 0px #3ea49d;
+	-moz-box-shadow: 0px 2px 0px #3ea49d;
+	-o-box-shadow: 0px 2px 0px #3ea49d;
+	box-shadow: 0px 2px 0px #3ea49d;
+}
+.deskpoolDelete,.desktypeDelete,.mouldDelete,.userDelete,.sessionDelete{
+	position:relative;
+	top:0;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	background-color:#da4453;
+	color:white;
+	font-size:14px;
+	cursor:pointer;
+	line-height:32px;
+	padding: 0px 10px 0px 30px;
+	margin-right:10px;
+	float:left;
+	font-family: 'Microsoft YaHei', 'Î¢ÈíÑÅºÚ', '\5FAE\8F6F\96C5\9ED1';
+	-webkit-box-shadow: 0px 2px 0px #a7313d;
+	-moz-box-shadow: 0px 2px 0px #a7313d;
+	-o-box-shadow: 0px 2px 0px #a7313d;
+	box-shadow: 0px 2px 0px #a7313d;
+}
+.batchOpt{
+	padding:0px 30px 0px 10px;
+	background-color:#93cc56;
+	-webkit-box-shadow: 0px 2px 0px #7CAA4A;
+	-moz-box-shadow: 0px 2px 0px #7CAA4A;
+	-o-box-shadow: 0px 2px 0px #7CAA4A;
+	box-shadow: 0px 2px 0px #7CAA4A;
+}
+.toolPic {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+.batchPic {
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+}
+.activateDisk .addText {
+	position:relative;
+	top:0;
+	left:0;
+}
+.unActivateDisk .addText {
+	position:relative;
+	top:0;
+	left:0;
+}
+.addText {
+	position:relative;
+	
+}
+
+
+.deskManageSelect {
+	position:absolute;
+	top:0;
+	left:0;
+	border: 1px solid #DEE5F5;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	z-index:100;
+	background-color:#fff;
+	/*overflow:hidden;*/
+}
+.deskManageserach {
+	position:absolute;
+	top:0;
+	right:0;
+	height:32px;
+	width:352px;
+}
+.deskSelectItem,.deskSelectDefaultItem {
+	text-indent:10px;
+}
+.deskSelectDefaultItem {
+	cursor:pointer;
+	padding-right:34px;
+	text-overflow:ellipsis;
+}
+/*.deskSelectDefaultItem:hover {*/
+	/*background-color:#058FCD;*/
+	/*color:white;*/
+/*}*/
+.deskItemPanel{
+	display:none;	
+	background-color:white;
+	box-shadow:0px 3px 9px  rgba(10,108,92,0.5);
+	-webkit-box-shadow:0px 3px 9px  rgba(10,108,92,0.5);
+	-moz-box-shadow:0px 3px 9px  rgba(10,108,92,0.5)!important;
+	-ms-box-shadow:0px 3px 9px  rgba(10,108,92,0.5);
+}
+.deskSelectItem {
+	cursor:pointer;
+}
+.deskSelectItem:hover{
+	background-color:#00BB9C;
+}
+.deskjiantou {
+	position:absolute;
+	top:0;
+	right:10px;
+	z-index:1;
+	cursor:pointer;
+}
+.deskManageInput {
+	position:absolute;
+	top:0;
+	left:100px;
+	height:32px;
+	width:250px;
+	border: 1px solid #DEE5F5;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	background-color:#FFF;
+}
+.deskManageInput input {
+	height:32px;
+	width:216px;
+	border:none;
+    outline:medium;
+	background:none;
+	font-size:14px;
+	text-indent:5px;
+	font-family: 'Microsoft YaHei', 'Î¢ÈíÑÅºÚ', '\5FAE\8F6F\96C5\9ED1';
+	margin-top:-1px;
+
+}
+.searchPic {
+	position:absolute;
+	top:0px;
+	right:0px;
+	height:32px;
+	width:36px;
+	color:#fff;
+	font-size: 16px;
+	line-height: 32px;
+	vertical-align: middle;
+	text-align: center;
+	background-color:#058fcd;
+	cursor:pointer;
+	border-radius: 0 4px 4px 0;
+}
+.searchPic:hover {
+	background-color: #069add;
+}
+
+.disableBtn {
+	cursor:not-allowed;
+	background-color:#a8b6b4;
+	-webkit-box-shadow: 0px 2px 0px #829191;
+	-moz-box-shadow: 0px 2px 0px #829191;
+	-o-box-shadow: 0px 2px 0px #829191;
+	box-shadow: 0px 2px 0px #829191;
+}
+
+.optStyle {
+	color:#058FCD;
+	font-size:14px;
+	cursor:pointer;
+}
+
+
+.innerspan {
+	color: #656d78;
+	padding-left: 5px;
+	vertical-align: middle;
+}
+.innerspan-icon{
+	color:#656d78 ;
+	vertical-align: middle;
+}
+.sessionIconstyle{
+	height: 28px;
+	border: solid #ccd1d9 1px;
+	width: 88px;
+	text-align: center;
+	vertical-align: middle;
+	text-indent: 0px;
+	line-height: 28px;
+	background-color: #fff;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	cursor:pointer;
+	}
+.green {
+	color:green;
+}
+.red {
+	color:red;
+}
+.grey {
+	color:grey;
+}
+.blue {
+	color:blue;
+}
+#dgwrap {
+	position:relative;
+	margin-right:20px;
+}
+.deskType-editButton {
+	position:relative;
+	color:#656D78;
+	display:inline;
+	padding:4px 20px;
+	border:1px solid #CCD1D9;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	cursor:pointer;
+}
+.disableshutdown{
+	cursor:not-allowed;
+
+}

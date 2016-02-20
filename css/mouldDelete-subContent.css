@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content{
+	width:600px;
+	margin:0 auto;
+	padding:0;
+}
+
+.btn{
+	position:relative;
+	margin-top:22px;
+	height:65px;
+	width:100%;
+	border-top: 1px solid #E5E8EF;
+
+}
+.btn input{
+	position:absolute;
+	top:15px;
+	width:77px;
+	height:33px;
+	background-color:#0590CC;
+	border-style:none;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	color:#fff;
+	cursor:pointer;
+	font-family: 'Microsoft YaHei','????','\5FAE\8F6F\96C5\9ED1';
+	-webkit-box-shadow: 0px 2px 0px #4483b0;
+	-moz-box-shadow: 0px 2px 0px #4483b0;
+	-o-box-shadow: 0px 2px 0px #4483b0;
+	box-shadow: 0px 2px 0px #4483b0;
+}
+.popSubmit {
+	right:106px;
+}
+.popCancel {
+	right:14px;
+}
+.text{
+	padding-left:30px;
+}
+.ckMoudle {
+	color:#058FCD;
+}
+
+
+

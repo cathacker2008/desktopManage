@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>无标题文档</title>
+<!--<style type="text/css">-->
+        <!--body{-->
+            <!--font-family: "MicroSoft YaHei";-->
+            <!--color: #333;-->
+        <!--}-->
+        <!--.panel-body{-->
+            <!--border-color: #fff;-->
+		<!-- -->
+        <!--}-->
+       <!--.datagrid-header{-->
+            <!--background: linear-gradient(to bottom,#e5e8ef 0,#e5e8ef 100%)!important;-->
+			<!--font-size:16px;-->
+        <!--}   -->
+ <!-- -->
+        <!--tr.datagrid-header-row{-->
+            <!--background-color: #e5e8ef!important;-->
+            <!--text-align: left;-->
+            <!--color: inherit;-->
+        <!--}-->
+        <!--tr.datagrid-header-row > td{-->
+            <!--border-left:1px solid #fff;-->
+        <!--}-->
+        <!--.datagrid-header td, .datagrid-body td, .datagrid-footer td{-->
+            <!--border-style: none;-->
+			<!--font-size:14px;-->
+        <!--}-->
+        <!--.datagrid-header td, .datagrid-body td, .datagrid-footer td{-->
+            <!--border-color: #fff;-->
+            <!--border-bottom:1px solid #d3dae8;-->
+            <!--text-align: left!important;-->
+            <!--padding: 10px 10px;-->
+            <!--color: inherit;-->
+        <!--}-->
+
+        <!--div.datagrid-cell{-->
+            <!--text-align: left!important;-->
+        <!--}-->
+        <!--.datagrid-row-selected{-->
+            <!--background:#dee5f5; -->
+        <!--}-->
+        <!--.datagrid-row-over{-->
+            <!--background:#e7f5f9; -->
+        <!--}-->
+        <!--.datagrid-row-expand{-->
+            <!--background: url('images/chakan1.png') no-repeat 0px center;-->
+            <!--width: 20px!important;-->
+            <!-- -->
+        <!--}-->
+        <!--.datagrid-row-collapse{-->
+            <!--/*展开后的查看详情，缺一张图*/-->
+            <!--background: url('images/chakan1.png') no-repeat 0px center;-->
+            <!--width: 20px!important;-->
+        <!--}-->
+        <!--.datagrid-cell-c1-itemid{-->
+            <!--background: url("images/zhuomianchixiaotubiao.png") no-repeat;-->
+            <!--padding-left: 25px;-->
+        <!--}-->
+        <!--.datagrid-header-row .datagrid-cell-c1-itemid{-->
+            <!--background: url("") no-repeat;-->
+            <!--padding-left: 25px;-->
+        <!--}-->
+        <!--div.datagrid-sort-desc span{-->
+            <!--margin-left: -20px;-->
+        <!--}-->
+        <!--div.datagrid-header-expander{-->
+            <!--width:100px!important;-->
+        <!--}-->
+        <!-- -->
+        <!-- -->
+    <!--</style>-->
+
+<link rel="stylesheet" type="text/css" href="../css/tools.css">
+<!--<link rel="stylesheet" type="text/css" href="../themes/default/easyui.css">-->
+<link rel="stylesheet" type="text/css" href="../themes/default/easyuitest.css">
+<link rel="stylesheet" type="text/css" href="../themes/icon.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/deskTable.css">
+<link rel="stylesheet" type="text/css" href="../css/row-style.css">
+<link rel="stylesheet" type="text/css" href="../css/table.css">
+
+</head>
+
+<body onselectstart="return false" >
+<div class='deskManageTools'>
+	<div class='deskpoolAdd'><span class='toolPic  icon-add'></span><span class='addText'>新建池</span></div>
+	<div class='deskpoolEdit disableBtn'><span class='toolPic  icon-edit-box'></span><span class='addText'>编辑池</span></div>
+	<div class='deskpoolDelete disableBtn'><span class='toolPic  icon-trashcan'></span><span class='addText'>删除池</span></div>
+	<div class='deskpoolAllocateuser disableBtn'><span class='toolPic  icon-folder-shared'></span><span class='addText'>分配用户</span></div>
+
+	<!--<div class='deskManageserach'>-->
+	<!--<div class='deskManageSelect'></div>-->
+	<!--<div class='deskManageInput'><input></input><div class='searchPic'></div></div>-->
+	<!--</div>-->
+</div>
+<div id="dgwrap">
+</div>   
+<div class="poolVmTitle">
+	<span class='pvInfo'></span><span> 桌面池下桌面列表</span>
+</div>   
+<div id="vmTablePanel" style='position:relative;margin-right:20px;'>
+</div>   
+</body>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>   
+<script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+<script type='text/javascript' src='../js/dc.js'></script>
+<script type='text/javascript' src='../js/jquery.deskSelect.js'></script>
+<script type="text/javascript" src='../js/frame.js'></script>
+<script type='text/javascript' src='../js/deskMenu.js'></script>
+<script type="text/javascript" src='../js/jquery.slimscroll.min.js'></script>
+<script type='text/javascript' src='../js/deskTable.js'></script>
+<script type='text/javascript' src='../js/deskPage.js'></script>
+<script type="text/javascript" src='../js/deskPooltableInit.js'></script>
+</html>

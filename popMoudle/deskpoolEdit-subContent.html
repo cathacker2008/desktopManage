@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/deskpoolEdit-subContent.css">
+<title>deskpoolEdit-subContent</title>
+</head>
+
+<body>
+<div class='content'>
+	<div class='dmdeskCpanel'>
+<ul class='basicInfo fontSize5'>
+<li><div class='deskAddTitleInfo'>桌面池名称 :</div><input id='vm_pool_name' class="input_text" readOnly='true' type="text" /></li>
+<li style='z-index:100'><div class='deskAddTitleInfo'>密级标志 :</div><div id ='vm_pool_sec' class='popSelectBox'></div></li>
+<li><div class='deskAddTitleInfo'>描述 :</div><input id='description' class="input_text" type="text" /></li>
+<li><div class='deskAddTitleInfo'>预启动数量 :</div><input  id="pool_prestart" class="input_text" type="text"  value="0"/></li>
+<li style='z-index:98;'><div class='deskAddTitleInfo'>增加虚拟机数量 :</div><input id='num_desktop' class="input_text" type="text" value="0"/></li>
+</ul>
+</div>
+<div class='popOpt'>
+	<div  id ='dmDeskpoolEditSubmit' class='dmDeskSubmit' >确定</div>
+	<div id ='dmDeskpoolEditCancel' class='dmDeskCancel' >取消</div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="./js/deskpoolEdit-subContent.js"></script>
+</html>

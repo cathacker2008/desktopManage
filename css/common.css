@@ -1,0 +1,209 @@
+body {
+	padding:0;
+	margin:0;
+	font-size:12px;
+	font-family:Microsoft YaHei,verdana,helvetica,sans-serif;
+}
+.fontSize1 {
+	font-size:13px;
+}
+.fontSize2 {
+	font-size:16px;
+}
+.fontSize3 {
+	font-size:18px;
+}
+.fontSize4 {
+	font-size:40px;
+}
+.fontSize5 {
+	font-size:14px;
+}
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.popUpBox {
+	display:none;
+	position:absolute;
+	top:0;
+	left:20px;
+	z-index:100;
+}
+.popSelectBox {
+
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	position: absolute;
+	left: 127px;
+	height: 34px;
+	border: 1px solid #DEE5F5;
+	text-align: left;
+	text-indent:10px;
+}
+
+
+/*******popboxContent***********/
+.popOpt {
+	position:relative;
+	margin-top:22px;
+	height:65px;
+	width:100%;
+	border-top: 1px solid #E5E8EF;
+}
+.popOpt>div {
+	position:absolute;
+	top:15px;
+	width:77px;
+	height:33px;
+	background-color:#0590CC;
+	border-style:none;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	color:#fff;
+	text-align: center;
+	line-height: 33px;
+	cursor:pointer;
+	font-family: 'Microsoft YaHei','????','\5FAE\8F6F\96C5\9ED1';
+	-webkit-box-shadow: 0px 2px 0px #4483b0;
+	-moz-box-shadow: 0px 2px 0px #4483b0;
+	-o-box-shadow: 0px 2px 0px #4483b0;
+	box-shadow: 0px 2px 0px #4483b0;
+}
+.popContentUl {
+	position:relative;
+	margin:0 40px 0 40px;
+	text-align:left;
+}
+.popContentTitle {
+	position: absolute;
+	left: 0;
+	width: 160px;
+	height: 36px;
+	line-height: 36px;
+	text-align: left;
+}
+.popContentLi {
+	position:relative;
+	margin-bottom:10px;
+	height:36px;
+}
+.dmDeskCancel {
+    right: 36px;
+}
+
+.dmDeskSubmit {
+    right: 129px;
+}
+.seperate{
+	color:#E5E9EF;
+	height: 36px;
+	line-height: 30px;
+	margin-left:78px;
+}
+.input_text{
+	padding: 0px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	width:367px;
+	height:34px;
+	border:1px solid #E5E9EF;
+	margin-left:127px;
+	text-indent:10px;
+	line-height:33px;
+}
+.popLiTitle {
+	position:absolute;
+	left:-4px;
+	width:120px;
+	height:36px;
+	line-height:36px;
+	text-align:right;
+}
+.popContentWrapper{
+	position: relative;
+	max-height: 335px;
+	overflow-y: auto;
+	margin-right: 2px;
+	max-width:583px;
+	overflow-x:hidden;
+}
+.netPic {
+	position: absolute;
+	color: #c2d6e7;
+	font-size: 34px;
+	cursor: pointer;
+	left: 460px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	-webkit-box-shadow: 0px 2px 0px #aabdcd;
+	-moz-box-shadow: 0px 2px 0px #aabdcd;
+	-o-box-shadow: 0px 2px 0px #aabdcd;
+	box-shadow: 0px 2px 0px #aabdcd;
+}
+.popMenu {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 33px;
+  border-bottom:2px solid #ccd1d9;
+}
+.popMenu>li{
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  width: 106px;
+  height: 33px;
+  line-height: 33px;
+  font-family: Microsoft YaHei;
+  float: left;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  text-align: center;
+}
+.subPopContent {
+	position:relative;
+	min-height:150px;
+	max-height:420px;
+}
+.batchTitle {
+	position:relative;
+	margin:10px 0 0 10px;
+	font-size:16px;
+	height:30px;
+	line-height:30px;
+}
+.batchPanel {
+	position:relative;
+	padding:0 10px;
+	font-size:14px;
+	margin-top:8px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.batchPanel span {
+	margin:0 2px;
+	white-space: pre-wrap;
+}
+.desk-taskListPanel {
+	position:relative;
+	margin: 0 0 40px 10px;
+	cursor:default;
+	max-height:430px;
+	overflow-y:auto;
+}
+
+.margin6{
+	margin-left: 6px;
+}

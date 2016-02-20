@@ -1,0 +1,164 @@
+.desk-table-status-pic {
+   width:35px;
+   height:30px;
+   background-repeat:no-repeat;
+}
+.desk-table-progress {
+	position:relative;
+	height:25px;
+	width:100%;
+}
+.desk-table-12px{
+	font-size:12px;
+}
+.desk-table-system-pic{
+	position:relative;
+	width:20px;
+	height:20px;
+	float:left;
+	background-image:url(../images/os_icons.png);
+	background-size:20px auto;
+	background-repeat:no-repeat;
+}
+.desk-table-vmname{
+	position:relative;
+	width:20px;
+	height:20px;
+	float:left;
+	color:#058FCD;
+}
+.desk-table-progress-bg {
+	position:absolute;
+	top:45%;
+	left:0;
+	height:6px;
+	width:100%;
+	background-color:#e3e4e8;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius:4px;
+}
+.desk-table-progress-bar {
+	position:relative;
+	top:0;
+	left:0;
+	height:100%;
+	background-color:#37bc9b;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius:4px;
+}
+.floatPanel {
+	display:none;
+	position:absolute;
+	z-index:1;
+	height:60px;
+	background:#434A54;
+	color:white;
+	overflow:hidden;
+	zoom:1;
+}
+.floatPanel-Button {
+	position:relative;
+	float:left;
+	width:60px;
+	height:60px;
+	cursor:pointer;
+	background:#434A54;
+	margin-bottom: -30px\0;
+	zoom:1;
+}
+:root .floatPanel-Button {
+	margin-bottom:0\9;
+}
+.floatPanel-Button-text{
+	position:relative;
+	height:25px;
+	line-height:20px;
+	width:60px;
+	text-align:center;
+	font-size:12px;
+}
+.floatPanel-Button-pic {
+	position:relative;
+	width:60px;
+	height:35px;
+	line-height:40px;
+	font-size:18px;
+	text-align:center;
+}
+.poolVmTitle {
+	position:relative;
+	padding-left:5px;
+	height: 30px;
+	width:100%;
+	font-size:14px;
+	margin-top: 20px;
+}
+.pvInfo{
+	color:#058FCD;
+}
+.optPanel {
+	display:none;
+	position:absolute;
+	top:34px;
+	left:0;
+	width:100%;
+	box-shadow:0px 1px 5px 0px rgba(0,0,0,0.27); 
+	-moz-box-shadow:0px 1px 5px 0px rgba(0,0,0,0.27); 
+	-webkit-box-shadow:0px 1px 5px 0px rgba(0,0,0,0.27); 
+	-ms-box-shadow:0px 1px 5px 0px rgba(0,0,0,0.27); 
+}
+.optPanel-ul {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background:white;
+	color:black;
+}
+.optPanel-ul >li {
+	position: relative;
+	top: 0;
+	left: 0;
+	padding-left:10px;
+	height: 34px;
+	line-height: 34px;
+	font-family: Microsoft YaHei;
+	cursor:pointer;
+}
+.optPanel-ul >li:hover{
+	background-color:#E6E9ED;	
+}
+.optPanel-li-N {
+
+}
+.optPanel-li-S {
+	background-color:#e6e9ed;
+}
+.color-green {
+	color:#84B74D;
+}
+.color-orange {
+	color:#FC8203;
+}
+.disOpt {
+	cursor:not-allowed;
+}
+.disOpt > span {
+	color:#a8b6b4;
+}
+.ztreePanel {
+	position:relative;
+	float:left;
+	width:200px;
+	height:630px;
+	z-index:1;
+	overflow-x:auto;
+}
+.vmTablePanel {
+	padding-left:230px;
+}
+.foot-vm-table {
+	margin-left:-230px;	
+}

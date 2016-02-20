@@ -1,0 +1,21 @@
+/* 初始化css */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px 'Microsoft YaHei', Arial,'宋体',Helvetica,sans-serif,'Arial Narrow',HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+a{color:#000;text-decoration:none;display:inline-block;}
+a:hover{color:#3468F1;text-decoration:none}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+
+.sel_box{padding:20px; }
+.sel_box,.txt_box,.sel_list,.sel_list a{width:260px; height:28px; line-height:28px;display:block;}
+.txt_box {border:1px solid #ccc; }
+.txt_box .sel_inp{border:0;height:28px; line-height:28px;float:left;width:210px; text-indent:10px;text-align:center;}
+.txt_box .sel_span{height:28px;background:#E9E9E9 url(../images/sort_down.png) no-repeat 50% 100%;display:inline-block; float:right;width:50px;}
+.txt_box .sel_span:hover{background: #CECECE url(../images/sort_down_h.png) no-repeat 50% 100%;}
+.sel_list{overflow-y:auto; overflow-x:hidden; height:80px;width:260px; border:1px solid #ccc; border-width:0 1px 1px 1px;}
+.sel_list a{color:#000; text-decoration:none; background:#fff; text-align:center;width:260px;border-bottom:1px solid #ccc;}
+.sel_list a:hover{background:blue;color:#fff;}
+.sel_list .last_item{border:0;}

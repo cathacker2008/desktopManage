@@ -1,0 +1,40 @@
+$(document).ready(function(){
+	var data = {};
+	$('.deskManageHeader').deskMenu({
+		ulClassName:'deskManageMenu',
+		menuItems:[
+				{
+					title:'桌面',//li显示文字
+					url:'./pages/table.html',
+					callback:function(){	
+					}
+				},
+				{
+					title:'桌面池',
+					url:'./pages/deskPooltable.html'
+					//callback:function(){
+						//$('.deskManageAdd').show();
+						//$('.deskManageAdd').css('width',130);
+						//$('.addText').html('新建桌面池');
+					//}
+				},
+				{
+					title:'桌面类型',
+					url:'./pages/deskTypetable.html'
+					//callback:function(){
+						//$('.deskManageAdd').hide();
+					//}
+				}
+			],
+		colorPanel:false,
+		defaultIndex:0,//默认选中index值
+		destContainer:$('.deskManageContainer')[0],//点击控件指向的容器
+		cursor:'pointer',//li鼠标样式
+		liClassNameN:'deskManageLiN',//li正常样式
+		liClassNameC:'deskManageLiC',//li选中样式
+		liClassNameS:'deskManageLiS'//li悬浮样式
+	});
+	window.setIframe = function(h){
+		$('.deskManageContainer').height(h);
+	}; 
+});

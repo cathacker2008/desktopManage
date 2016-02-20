@@ -1,0 +1,105 @@
+.systemWrapper {
+	position:relative;
+	margin:20px;
+}
+.systemWrapper>div {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+.screenPanel {
+	width:74%;
+	background-color:white;
+	height:470px;
+	margin-top:50px;
+	border-radius:18px;
+	border:solid 1px #CCCDD1;
+	padding:24px 24px 60px 24px;
+}
+.screenContent {
+	position:relative;
+	height:470px;
+	width:100%;
+	background:#323846 url('../images/earth-background.png') no-repeat 50% center;
+}
+@media screen and (max-width: 1920px) {
+	.screenPanel {
+		width:74%;
+		background-color:white;
+		height:470px;
+		margin-top:50px;
+		border-radius:18px;
+		border:solid 1px #CCCDD1;
+		padding:24px 24px 60px 24px;
+	}
+	.screenContent {
+		position: relative;
+		height: 470px;
+		width: 100%;
+		background: #323846 url('../images/earth-background.png') no-repeat 50% center;
+	}
+}
+@media screen and (max-width: 1680px) {
+	.screenPanel {
+		width:74%;
+		background-color:white;
+		height:420px;
+		margin-top:50px;
+		border-radius:18px;
+		border:solid 1px #CCCDD1;
+		padding:24px 24px 60px 24px;
+	}
+	.screenContent {
+		position: relative;
+		height: 440px;
+		width: 100%;
+		background: #323846 url('../images/earth-background.png') no-repeat 50% center;
+	}
+}
+@media screen and (max-width: 1380px) {
+	.screenPanel {
+		width:60%;
+		background-color:white;
+		height:406px;
+		margin-top:50px;
+		border-radius:18px;
+		border:solid 1px #CCCDD1;
+		padding:24px 24px 60px 24px;
+	}
+	.screenContent {
+		position: relative;
+		height: 406px;
+		width: 100%;
+		background: #323846 url('../images/earth-background.png') no-repeat 50% center;
+	}
+}
+.linkPanel {
+	width:80%;
+	height:78px;
+	background:url('../images/diZuo.png') no-repeat center center;
+	z-index:1;
+}
+.bottomPanel {
+	margin-top:-50px;
+	height:0;
+	border-bottom: 160px solid #DADEE7;
+	border-left: 233px solid transparent;
+	border-right: 233px solid transparent;
+}
+.companyInfo {
+	position:relative;
+	top:80px;
+	width:464px;
+	height:34px;
+	margin-left:auto;
+	margin-right:auto;
+	background:url(../images/banbenhao.png) no-repeat;
+}
+.bandInfo {
+	position:relative;
+	top:90px;
+	width:441px;
+	margin-left:auto;
+	margin-right:auto;
+	color:#DADEE6;
+}

@@ -1,0 +1,230 @@
+@charset "utf-8";
+	/* CSS Document*/
+	p,ul,li,input button {
+	margin:0;
+	padding:0;
+}
+/*ul li, input button {*/
+	/*list-style:none;*/
+/*}*/
+.clear {
+	clear:both;
+}
+a {
+	text-decoration:none;
+	color:#333;
+}
+.buttons {
+	margin:0 auto;
+}
+
+/*body {*/
+	/*margin:0;*/
+	/*padding:0;*/
+	/*[>text-align:center;<]*/
+	/*font-family:Microsoft YaHei;*/
+	/*font-size:14px;*/
+	/*color:#666666;*/
+	/*overflow:auto;*/
+	/*width:100%;*/
+	/*height:auto;*/
+/*}*/
+.containter {
+	width:100%;
+	height:auto;
+	background-color:white;
+}
+.tcfo {
+	margin:0 auto;
+	width:800px;
+	height:712px;
+	border:#999 solid 1px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	margin-top:60px;
+}
+#steps {
+	width:625px;
+	height:70px;
+	margin:0 auto;
+	margin-top:50px;
+	position:relative;
+}
+.prgs {
+	width:625px;
+	height:8px;
+	position:absolute;
+	left:0;
+	top:13px;
+}
+.prgs_l {
+	width:24px;
+	height:100%;
+	background:url(../images/progress_edge.png) no-repeat left top;
+	float:left;
+}
+.prgs_c {
+	width:577px;
+	height:100%;
+	background:url(../images/progress_bgx.png) repeat-x left -8px;
+	float:left;
+}
+.prgs_c_p {
+	width:0%;
+	height:100%;
+	background:url(../images/progress_bgx.png) repeat-x left top;
+}
+.prgs_r {
+	width:24px;
+	height:100%;
+	background:url(../images/progress_edge.png) no-repeat right bottom;
+	float:left;
+}
+.step {
+	width:44px;
+	height:44px;
+	background:url(../images/stepnum.png) no-repeat left top;
+	position:absolute;
+}
+.step1 {
+	top:-6px;
+	left:18px;
+	background-position:0 -44px;
+}
+.step2 {
+	top:-6px;
+	left:200px;
+	background-position:-44px 0;
+}
+.step3 {
+	top:-6px;
+	left:380px;
+	background-position:-88px 0;
+}
+.step4 {
+	top:-6px;
+	left:550px;
+	background-position:-132px 0;
+}
+
+/*current step*/
+	.step1_1 {
+		background-position:left bottom;
+}
+.step2_1 {
+	background-position:-44px -44px;
+}
+.step3_1 {
+background-position:-88px -44px;
+}
+.step4_1 {
+	background-position:-132px -44px;
+}
+
+
+.ptxt {
+	width:90px;
+	height:20px;
+	position:absolute;
+	top:52px;
+	left:0;
+	text-align:left;
+}
+.ptxt_p {
+	color:#f06436;
+}
+.ptxt1 {
+	top:55px;
+	left:0px;
+}
+.ptxt2 {
+	top:55px;
+	left:195px;
+}
+.ptxt3 {
+	top:55px;
+	left:375px;
+}
+.ptxt4 {
+	top:55px;
+	left:545px;
+}
+.ptxt5 {
+	top:55px;
+	left:726px;
+}
+.ptxt6 {
+	top:55px;
+	left:903px;
+}
+.buttons {
+	width:700px;
+	height:29px;
+	
+	text-align:right;
+	clear:both;
+	margin-top:-40px;
+
+}
+button {
+	width:79px;
+	height:29px;
+	background:transparent url(../images/buttons.png) no-repeat left top;
+	border:0;
+	cursor:pointer;
+	margin-left:10px;
+	
+}
+button.prev {
+	background-position:-79px 0px;
+}
+
+button.finish {
+	background-position:right top;
+}
+
+#content {
+	width:100%;
+	height:480px;
+
+}
+.hide {
+	display:none;
+}
+.con {
+	width:800px;
+	height:460px;
+	padding-top:40px;
+	margin:0 auto;
+	text-align:center;
+}
+/*.config{
+	
+	width:380px;
+	height:310px;
+	padding-top:70px;
+	margin:0 auto;
+	text-align:center;
+	}*/
+.start ul li,.config ul li{
+	width:45%;
+	float:left;
+	margin-left:3%;	
+	text-align:left;
+	}
+	.list{
+		height:40px;
+		margin-top:6px;
+		}
+	.img{
+		width:100%;
+		height:350px;
+		background-color:#FC9;
+		}	
+	
+
+
+	
+
